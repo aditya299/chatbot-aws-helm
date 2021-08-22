@@ -51,7 +51,7 @@ rasax:
     finalizers:
     - kubernetes.io/pvc-protection
     # existingClaim which should be used instead of a new one
-    # existingClaim: "rasax-claim"
+    existingClaim: "efs-claim-rasax"
   # livenessProbe checks whether rasa x needs to be restarted
   livenessProbe:
     # initialProbeDelay for the `livenessProbe`

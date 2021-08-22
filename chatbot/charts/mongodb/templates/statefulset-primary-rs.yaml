@@ -267,7 +267,7 @@ spec:
       volumes:
       - name: datadir
         persistentVolumeClaim: 
-          claimName: efs-claim-1
+          claimName: efs-claim-monog-primary
         {{- if (.Files.Glob "files/docker-entrypoint-initdb.d/*[sh|js|json]") }}
         - name: custom-init-scripts
           configMap:

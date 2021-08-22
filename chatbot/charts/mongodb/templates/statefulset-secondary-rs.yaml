@@ -251,7 +251,7 @@ spec:
       volumes:
       - name: datadir
         persistentVolumeClaim: 
-          claimName: efs-claim-2
+          claimName: efs-claim-mongo-secondary
         {{- if .Values.configmap }}
         - name: config
           configMap:

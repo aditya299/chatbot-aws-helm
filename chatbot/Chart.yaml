@@ -33,12 +33,14 @@ dependencies:
 - name: redis
   version: ~10.5.12
   repository: https://charts.bitnami.com/bitnami
-  condition: redis.install
+  # condition: redis.install
+  condition: redis.enabled
 
 - name: rabbitmq
   version: ~6.19.2
   repository: https://charts.bitnami.com/bitnami
-  condition: rabbitmq.install
+  # condition: rabbitmq.install
+  condition: rabbitmq.enabled
 
 - name: mongodb
   version: 7.x
