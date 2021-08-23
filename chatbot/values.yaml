@@ -1005,7 +1005,8 @@ service:
 
   ## ServiceType
   ## ref: https://kubernetes.io/docs/user-guide/services/#publishing-services---service-types
-  type: NodePort
+  # type: NodePort
+  type: LoadBalancer
 
   ## Optional static port assignment for service type NodePort.
   nodePort: 30000
